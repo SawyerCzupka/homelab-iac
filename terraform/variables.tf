@@ -8,13 +8,13 @@ variable "pm_api_url" {
 variable "pm_node" {
   description = "Node name in the Proxmox cluster"
   type        = string
-  default     = "pve" # Update with your node name
+  default     = "t430prox" # Update with your node name
 }
 
 variable "pm_user" {
   description = "User for Proxmox authentication"
   type        = string
-  default     = "root" # Update with your Proxmox user
+  default     = "terraform-prov@pve" # Update with your Proxmox user
 }
 
 # Sensitive data like passwords should not be hardcoded in variables.tf
